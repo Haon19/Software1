@@ -1,15 +1,12 @@
-# Fourth Question. Write a program that asks the user for three integer numbers.
-# The program prints out the sum, product, and average of the numbers.
+#Write a program that asks the user to enter the names of five cities one by one
+#(use a for loop for reading the names) and stores them into a list structure.
+#Finally, the program prints out the names of the cities one by one, one city per line,
+#in the same order they were read as input. Use a for loop for asking the names and a for/in
+#loop to iterate through the list.
 
-x = int(input("Enter your first number: "))
-y = int(input("Enter your second number: "))
-z = int(input("Enter your third number: "))
-
-sum = x + y + z
-product = x * y * z
-average = sum / 3
-
-
-print("The sum of your numbers is",sum)
-print("The product of your numbers is",product)
-print("The average is",average)
+cities = []
+for i in range (1,6):
+    city = input("enter city name:")
+    cities.append(city)
+for j in range (0,5):
+    print(cities[j])
